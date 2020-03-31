@@ -42,6 +42,7 @@ class App {
                 return repo.tag_list.find(tag => {
                     return (
                         tag === 'Javascript' ||
+                        tag === 'ES6+' ||
                         tag === 'Html' ||
                         tag === 'Css' ||
                         tag === 'Php' ||
@@ -53,7 +54,7 @@ class App {
                     );
                 });
             });
-            
+
             console.log(this.repositories);
         } catch (error) {
             alert('O repositório não existe');
@@ -61,6 +62,14 @@ class App {
 
         this.render();
     }
+
+    // getTechs () {
+    //     this.techs = this.repositories.map(repo => {
+    //         return repo.tag_list.map(tag => {
+    //             return tag;
+    //         });
+    //     });
+    // }
 
     render () {
         this.listEl.innerHTML = '';
