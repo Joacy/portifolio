@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Joacy Mesquita</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <style>
+        ul#repo-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-weight: sans-serif;
+        }
+
+        ul#repo-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            clear: both;
+            width: 100%;
+            height: auto;
+        }
+
+        ul#repo-list li img {
+            width: 80px;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        ul#repo-list li strong {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        ul#repo-list li p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/200x70/ecf0ff/ecf0ff" alt="">
+                </div>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre">
+            <div class="container">
+                a
+            </div>
+        </section>
+        <section id="tecnologias" class="tecnologias">
+            <div class="container">
+                a
+            </div>
+        </section>
+        <section id="servicos" class="servicos">
+            <div class="container">
+                a
+            </div>
+        </section>
+        <section id="projetos" class="projetos">
+            <div class="container">
+                <ul id="repo-list"></ul>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <div class="container">
+                <div class="colunas">
+                    <div class="coluna">
+                        <h2>Onde me encontrar</h2>
+                        <ul>
+                            <li>Email: <span><a href="javascript:;" target="_blank">joacymsilva@gmail.com</a></span>
+                            </li>
+                            <li>Whatsapp: <span><a href="javascript:;" target="_blank">75991183579</a></span></li>
+                            <li>Gitlab: <span><a href="https://gitlab.com/JoacyMS/"
+                                        target="_blank">https://gitlab.com/JoacyMS/</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="coluna">
+                        <h2>Faça um orçamento</h2>
+                        <form action="" method="POST">
+                            <input type="text" name="name" placeholder="Nome" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="whatsapp" placeholder="Whatsapp" required>
+                            <input type="text" name="assunto" placeholder="Assunto" required>
+                            <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados - Joacy Mesquita</p>
+        </div>
+    </footer>
+
+    <script src="./bundle.js"></script>
+</body>
+
+</html>

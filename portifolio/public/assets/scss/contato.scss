@@ -1,0 +1,67 @@
+.contato {
+  ul {
+    list-style: none;
+    li + li {
+      margin-top: 15px;
+    }
+    li {
+      font-size: 14px;
+      color: #536ecd;
+      a {
+        color: #536ecd;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      a:hover {
+        color: #2f3033;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input + input,
+    input + textarea,
+    textarea + button {
+      margin-top: 15px;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid #536ecd;
+      padding: 10px;
+      border-radius: 4px;
+      color: #536ecd;
+      font-family: "Oxygen", sans-serif;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #536ecd;
+      font-family: "Oxygen", sans-serif;
+      font-size: 14px;
+    }
+
+    button {
+      width: 120px;
+      padding: 10px 15px;
+      background: #536ecd;
+      color: #ecf0ff;
+      border: 0;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background: #536ecdee;
+    }
+  }
+}
