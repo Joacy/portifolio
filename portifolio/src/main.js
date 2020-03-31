@@ -5,7 +5,7 @@ class App {
         this.user = [];
         this.userId = '';
         this.repositories = [];
-
+        this.techs = [];
         this.listEl = document.getElementById('repo-list');
 
         this.getUser();
@@ -38,7 +38,22 @@ class App {
 
             const response = await api.get(`users/${this.userId}/projects`, { params });
 
-            this.repositories = response.data;
+            this.repositories = response.data.filter(repo => {
+                return repo.tag_list.find(tag => {
+                    return (
+                        tag === 'Javascript' ||
+                        tag === 'Html' ||
+                        tag === 'Css' ||
+                        tag === 'Php' ||
+                        tag === 'Nodejs' ||
+                        tag === 'React' ||
+                        tag === 'React Native' ||
+                        tag === 'Angularjs' ||
+                        tag === 'Vuejs'
+                    );
+                });
+            });
+            
             console.log(this.repositories);
         } catch (error) {
             alert('O repositório não existe');
