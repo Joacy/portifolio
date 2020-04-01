@@ -19,6 +19,7 @@ class App {
             'Vuejs'
         ];
 
+        this.techsListEl = document.getElementById('techs-list');
         this.listEl = document.getElementById('repo-list');
 
         this.getUser();
