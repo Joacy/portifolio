@@ -5,7 +5,20 @@ class App {
         this.user = [];
         this.userId = '';
         this.repositories = [];
-        this.techs = [];
+
+        this.techs = [
+            'Javascript',
+            'ES6+',
+            'Html',
+            'Css',
+            'Php',
+            'Nodejs',
+            'React',
+            'React Native',
+            'Angularjs',
+            'Vuejs'
+        ];
+
         this.listEl = document.getElementById('repo-list');
 
         this.getUser();
@@ -63,14 +76,6 @@ class App {
         this.render();
     }
 
-    // getTechs () {
-    //     this.techs = this.repositories.map(repo => {
-    //         return repo.tag_list.map(tag => {
-    //             return tag;
-    //         });
-    //     });
-    // }
-
     render () {
         this.listEl.innerHTML = '';
 
@@ -84,6 +89,20 @@ class App {
             let descriptionEl = document.createElement('p');
             descriptionEl.appendChild(document.createTextNode(repo.description));
 
+            let techsEl = document.createElement('p');
+            techsEl.appendChild(document.createTextNode('Tecnologias Utilizadas'));
+            techsEl.className = 'techs';
+
+            let listTagsEl = document.createElement('ul');
+            listTagsEl.className = 'list-tags';
+
+            repo.tag_list.forEach(tag => {
+                let tagsEl = document.createElement('li');
+                tagsEl.appendChild(document.createTextNode(tag));
+                tagsEl.className = 'tag';
+                listTagsEl.appendChild(tagsEl);
+            });
+
             let linkEl = document.createElement('a');
             linkEl.setAttribute('target', '_blank');
             linkEl.appendChild(document.createTextNode('Acessar'));
@@ -93,7 +112,11 @@ class App {
             listItemEl.appendChild(imgEl);
             listItemEl.appendChild(titleEl);
             listItemEl.appendChild(descriptionEl);
+            listItemEl.appendChild(techsEl);
+            listItemEl.appendChild(listTagsEl);
             listItemEl.appendChild(linkEl);
+
+            listItemEl.className = 'repo';
 
             this.listEl.appendChild(listItemEl);
         });
