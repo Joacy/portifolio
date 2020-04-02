@@ -1,6 +1,7 @@
 section.principal {
   background: url("../imagens/bg-principal.jpg") center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: calc(100vh - 120px);
   position: relative; }
   section.principal .container {
@@ -19,13 +20,13 @@ section.principal {
   section.principal h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #f9f9f9;
+    color: #ecf0ff;
     margin-bottom: 15px;
     text-shadow: 1px 1px 0px #000; }
   section.principal h2 {
     font-size: 28px;
     font-weight: 400;
-    color: #f9f9f9;
+    color: #ecf0ff;
     text-shadow: 1px 1px 0px #000;
     margin-bottom: 10px; }
 
@@ -33,7 +34,7 @@ section.principal::before {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(83, 110, 205, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
   z-index: 5; }
@@ -68,11 +69,8 @@ h2 {
   margin-bottom: 35px; }
 
 section {
-  background: #ecf0ff;
+  background: #000000;
   padding: 50px 0px; }
-
-section:nth-child(2n) {
-  background: #f9f9f9; }
 
 .container {
   position: relative;
@@ -164,26 +162,6 @@ header {
         transition: all 0.3s; }
       header .menu ul li a:hover {
         border-bottom: 2px solid #ecf0ff; }
-
-section.tecnologias ul#techs-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  overflow: auto; }
-  section.tecnologias ul#techs-list li.tech {
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin: 0 10px;
-    border: 1px solid #536ecd; }
-    section.tecnologias ul#techs-list li.tech p {
-      font-size: 16px;
-      font-weight: bold;
-      color: #536ecd;
-      text-align: center;
-      min-width: 100px; }
 
 section.servicos ul#services-list {
   display: -ms-grid;
@@ -319,14 +297,32 @@ section.contato ul {
     font-size: 14px;
     color: #536ecd; }
     section.contato ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       color: #536ecd;
       font-weight: bold;
       text-decoration: none;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 2px solid #536ecd;
+      max-width: 120px; }
+      section.contato ul li a i {
+        margin-right: 10px;
+        font-weight: normal;
+        font-size: 16px; }
     section.contato ul li a:hover {
-      color: #2f3033; }
+      background: #536ecd;
+      color: #f9f9f9; }
 
 section.contato form {
   display: -webkit-box;

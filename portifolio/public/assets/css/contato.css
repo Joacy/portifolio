@@ -6,14 +6,32 @@ section.contato ul {
     font-size: 14px;
     color: #536ecd; }
     section.contato ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       color: #536ecd;
       font-weight: bold;
       text-decoration: none;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 2px solid #536ecd;
+      max-width: 120px; }
+      section.contato ul li a i {
+        margin-right: 10px;
+        font-weight: normal;
+        font-size: 16px; }
     section.contato ul li a:hover {
-      color: #2f3033; }
+      background: #536ecd;
+      color: #f9f9f9; }
 
 section.contato form {
   display: -webkit-box;

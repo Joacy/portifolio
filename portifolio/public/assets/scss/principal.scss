@@ -1,6 +1,7 @@
 section.principal {
     background: url("../imagens/bg-principal.jpg") center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: calc(100vh - 120px);
     position: relative;
 
@@ -15,7 +16,7 @@ section.principal {
     h1 {
         font-size: 50px;
         font-weight: bold;
-        color: #f9f9f9;
+        color: #ecf0ff;
         margin-bottom: 15px;
         text-shadow: 1px 1px 0px #000;
     }
@@ -23,7 +24,7 @@ section.principal {
     h2 {
         font-size: 28px;
         font-weight: 400;
-        color: #f9f9f9;
+        color: #ecf0ff;
         text-shadow: 1px 1px 0px #000;
         margin-bottom: 10px;
     }
@@ -33,7 +34,7 @@ section.principal::before {
     content: "";
     position: absolute;
     top: 0;
-    background: rgba(#536ecd, 0.5);
+    background: rgba(#000000, 0.9);
     height: 100%;
     width: 100%;
     z-index: 5;
