@@ -1,4 +1,74 @@
-.contato {
-  background: #ecf0ff; }
-  .contato form {
-    width: 100%; }
+section.contato ul {
+  list-style: none; }
+  section.contato ul li + li {
+    margin-top: 15px; }
+  section.contato ul li {
+    font-size: 14px;
+    color: #536ecd; }
+    section.contato ul li a {
+      color: #536ecd;
+      font-weight: bold;
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    section.contato ul li a:hover {
+      color: #2f3033; }
+
+section.contato form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+  section.contato form input + input,
+  section.contato form input + textarea,
+  section.contato form textarea + button {
+    margin-top: 15px; }
+  section.contato form input,
+  section.contato form textarea {
+    background: transparent;
+    border: 1px solid #536ecd;
+    padding: 10px;
+    border-radius: 4px;
+    color: #536ecd;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px; }
+  section.contato form input::-webkit-input-placeholder,
+  section.contato form textarea::-webkit-input-placeholder {
+    color: #536ecd;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px; }
+  section.contato form input:-ms-input-placeholder,
+  section.contato form textarea:-ms-input-placeholder {
+    color: #536ecd;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px; }
+  section.contato form input::-ms-input-placeholder,
+  section.contato form textarea::-ms-input-placeholder {
+    color: #536ecd;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px; }
+  section.contato form input::placeholder,
+  section.contato form textarea::placeholder {
+    color: #536ecd;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px; }
+  section.contato form button {
+    width: 120px;
+    padding: 10px 15px;
+    background: #536ecd;
+    color: #ecf0ff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  section.contato form button:hover {
+    background: #536ecdee; }

@@ -1,0 +1,40 @@
+section.principal {
+    background: url("../imagens/bg-principal.jpg") center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 120px);
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        z-index: 10;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #f9f9f9;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 0px #000;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 400;
+        color: #f9f9f9;
+        text-shadow: 1px 1px 0px #000;
+        margin-bottom: 10px;
+    }
+}
+
+section.principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: rgba(#536ecd, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}

@@ -1,3 +1,43 @@
+section.principal {
+  background: url("../imagens/bg-principal.jpg") center no-repeat;
+  background-size: cover;
+  height: calc(100vh - 120px);
+  position: relative; }
+  section.principal .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 10; }
+  section.principal h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #f9f9f9;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0px #000; }
+  section.principal h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 0px #000;
+    margin-bottom: 10px; }
+
+section.principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: rgba(83, 110, 205, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 5; }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,11 +68,11 @@ h2 {
   margin-bottom: 35px; }
 
 section {
-  background: #f9f9f9;
+  background: #ecf0ff;
   padding: 50px 0px; }
 
 section:nth-child(2n) {
-  background: #ecf0ff; }
+  background: #f9f9f9; }
 
 .container {
   position: relative;
@@ -75,7 +115,7 @@ section:nth-child(2n) {
       margin-top: 50px; } }
 
 header {
-  background: #536ecd;
+  background: #1332a1;
   color: #ecf0ff;
   padding: 25px 0px;
   width: 100%; }
@@ -125,26 +165,27 @@ header {
       header .menu ul li a:hover {
         border-bottom: 2px solid #ecf0ff; }
 
-ul#techs-list {
+section.tecnologias ul#techs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  list-style: none;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow: auto; }
-  ul#techs-list li.tech {
-    padding: 5px 15px;
+  section.tecnologias ul#techs-list li.tech {
+    padding: 5px 10px;
     border-radius: 8px;
-    margin: 0 10px; }
-    ul#techs-list li.tech p {
-      font-size: 20px;
-      color: #f9f9f9;
-      text-align: center; }
+    margin: 0 10px;
+    border: 1px solid #536ecd; }
+    section.tecnologias ul#techs-list li.tech p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #536ecd;
+      text-align: center;
+      min-width: 100px; }
 
-ul#services-list {
+section.servicos ul#services-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -155,7 +196,7 @@ ul#services-list {
   padding: 0;
   font-weight: sans-serif;
   width: 100%; }
-  ul#services-list li.service {
+  section.servicos ul#services-list li.service {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,22 +213,22 @@ ul#services-list {
     width: 100%;
     border-radius: 8px;
     padding: 25px 15px;
-    background: rgba(236, 240, 255, 0.3);
+    background: #f9f9f9;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
-    ul#services-list li.service img {
+    section.servicos ul#services-list li.service img {
       height: 70px;
       width: auto;
       -o-object-fit: contain;
       object-fit: contain;
       margin-bottom: 15px; }
-    ul#services-list li.service p.title {
+    section.servicos ul#services-list li.service p.title {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       color: #536ecd; }
 
-ul#repo-list {
+section.projetos ul#repo-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -198,94 +239,96 @@ ul#repo-list {
   padding: 0;
   font-weight: sans-serif;
   width: 100%; }
+  section.projetos ul#repo-list li.repo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 15px 5px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+    section.projetos ul#repo-list li.repo img {
+      width: 80px;
+      float: left;
+      margin-bottom: 10px; }
+    section.projetos ul#repo-list li.repo strong {
+      font-size: 20px;
+      text-transform: capitalize; }
+    section.projetos ul#repo-list li.repo p {
+      margin: 5px 0; }
+    section.projetos ul#repo-list li.repo a {
+      background: #536ecd;
+      text-decoration: none;
+      color: #f9f9f9;
+      font-size: 14px;
+      padding: 3px 7px;
+      border-radius: 4px; }
+    section.projetos ul#repo-list li.repo p.techs {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    section.projetos ul#repo-list li.repo ul.list-tags {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      list-style: none;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      width: 100%; }
+      section.projetos ul#repo-list li.repo ul.list-tags li.tag {
+        margin: 0 5px;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 12px;
+        background: #f9f9f9;
+        border: 1px solid #536ecd; }
 
-ul#repo-list li.repo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  text-align: center;
-  clear: both;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  padding: 15px 5px;
-  background: #f9f9f9;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+@media (min-width: 768px) and (max-width: 991px) {
+  section.projetos ul#repo-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); } }
 
-ul#repo-list li.repo img {
-  width: 80px;
-  float: left;
-  margin-bottom: 10px; }
+@media screen and (max-width: 767px) {
+  section.projetos ul#repo-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr); } }
 
-ul#repo-list li.repo strong {
-  font-size: 20px;
-  text-transform: capitalize; }
-
-ul#repo-list li.repo p {
-  margin: 5px 0; }
-
-ul#repo-list li.repo a {
-  background: #536ecd;
-  text-decoration: none;
-  color: #f9f9f9;
-  font-size: 14px;
-  padding: 3px 7px;
-  border-radius: 4px; }
-
-p.techs {
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px; }
-
-ul.list-tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  width: 100%; }
-
-ul.list-tags li.tag {
-  margin: 0 5px;
-  padding: 2px 5px;
-  border-radius: 4px;
-  font-size: 12px;
-  background: #f9f9f9;
-  border: 1px solid #536ecd; }
-
-.contato ul {
+section.contato ul {
   list-style: none; }
-  .contato ul li + li {
+  section.contato ul li + li {
     margin-top: 15px; }
-  .contato ul li {
+  section.contato ul li {
     font-size: 14px;
     color: #536ecd; }
-    .contato ul li a {
+    section.contato ul li a {
       color: #536ecd;
       font-weight: bold;
       text-decoration: none;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-    .contato ul li a:hover {
+    section.contato ul li a:hover {
       color: #2f3033; }
 
-.contato form {
+section.contato form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,12 +337,12 @@ ul.list-tags li.tag {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%; }
-  .contato form input + input,
-  .contato form input + textarea,
-  .contato form textarea + button {
+  section.contato form input + input,
+  section.contato form input + textarea,
+  section.contato form textarea + button {
     margin-top: 15px; }
-  .contato form input,
-  .contato form textarea {
+  section.contato form input,
+  section.contato form textarea {
     background: transparent;
     border: 1px solid #536ecd;
     padding: 10px;
@@ -307,27 +350,27 @@ ul.list-tags li.tag {
     color: #536ecd;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
-  .contato form input::-webkit-input-placeholder,
-  .contato form textarea::-webkit-input-placeholder {
+  section.contato form input::-webkit-input-placeholder,
+  section.contato form textarea::-webkit-input-placeholder {
     color: #536ecd;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
-  .contato form input:-ms-input-placeholder,
-  .contato form textarea:-ms-input-placeholder {
+  section.contato form input:-ms-input-placeholder,
+  section.contato form textarea:-ms-input-placeholder {
     color: #536ecd;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
-  .contato form input::-ms-input-placeholder,
-  .contato form textarea::-ms-input-placeholder {
+  section.contato form input::-ms-input-placeholder,
+  section.contato form textarea::-ms-input-placeholder {
     color: #536ecd;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
-  .contato form input::placeholder,
-  .contato form textarea::placeholder {
+  section.contato form input::placeholder,
+  section.contato form textarea::placeholder {
     color: #536ecd;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
-  .contato form button {
+  section.contato form button {
     width: 120px;
     padding: 10px 15px;
     background: #536ecd;
@@ -340,7 +383,7 @@ ul.list-tags li.tag {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-  .contato form button:hover {
+  section.contato form button:hover {
     background: #536ecdee; }
 
 footer {

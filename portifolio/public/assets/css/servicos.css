@@ -1,0 +1,42 @@
+section.servicos ul#services-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: sans-serif;
+  width: 100%; }
+  section.servicos ul#services-list li.service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+    padding: 25px 15px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+    section.servicos ul#services-list li.service img {
+      height: 70px;
+      width: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      margin-bottom: 15px; }
+    section.servicos ul#services-list li.service p.title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #536ecd; }

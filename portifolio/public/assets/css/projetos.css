@@ -1,0 +1,82 @@
+section.projetos ul#repo-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: sans-serif;
+  width: 100%; }
+  section.projetos ul#repo-list li.repo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 15px 5px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+    section.projetos ul#repo-list li.repo img {
+      width: 80px;
+      float: left;
+      margin-bottom: 10px; }
+    section.projetos ul#repo-list li.repo strong {
+      font-size: 20px;
+      text-transform: capitalize; }
+    section.projetos ul#repo-list li.repo p {
+      margin: 5px 0; }
+    section.projetos ul#repo-list li.repo a {
+      background: #536ecd;
+      text-decoration: none;
+      color: #f9f9f9;
+      font-size: 14px;
+      padding: 3px 7px;
+      border-radius: 4px; }
+    section.projetos ul#repo-list li.repo p.techs {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    section.projetos ul#repo-list li.repo ul.list-tags {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      list-style: none;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      width: 100%; }
+      section.projetos ul#repo-list li.repo ul.list-tags li.tag {
+        margin: 0 5px;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 12px;
+        background: #f9f9f9;
+        border: 1px solid #536ecd; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section.projetos ul#repo-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 767px) {
+  section.projetos ul#repo-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr); } }

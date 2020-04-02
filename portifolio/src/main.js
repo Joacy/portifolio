@@ -22,7 +22,24 @@ class App {
         this.techsListEl = document.getElementById('techs-list');
         this.listEl = document.getElementById('repo-list');
 
+        this.getTechs();
         this.getUser();
+    }
+
+    getTechs () {
+        this.techsListEl.innerHTML = '';
+
+        this.techs.forEach(tech => {
+            let itemTechEl = document.createElement('li');
+            itemTechEl.className = 'tech';
+
+            let pItemTechEl = document.createElement('p');
+            pItemTechEl.innerText = tech;
+
+            itemTechEl.appendChild(pItemTechEl);
+
+            this.techsListEl.appendChild(itemTechEl);
+        });
     }
 
     async getUser () {
