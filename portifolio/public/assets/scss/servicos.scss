@@ -18,8 +18,9 @@ section.servicos {
             width: 100%;
             border-radius: 8px;
             padding: 25px 15px;
-            background: #f9f9f9;
-            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+            background: transparent;
+            border: 1px solid #ecf0ff;
+            transition: all 0.3s;
 
             img {
                 height: 70px;
@@ -30,9 +31,17 @@ section.servicos {
 
             p.title {
                 font-size: 20px;
-                font-weight: bold;
+                font-weight: 900;
                 text-align: center;
-                color: #536ecd;
+                color: #ecf0ff;
+            }
+        }
+
+        li.service:hover {
+            background: #ecf0ff;
+
+            p.title {
+                color: #080120;
             }
         }
     }

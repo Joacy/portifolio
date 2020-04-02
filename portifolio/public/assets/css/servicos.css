@@ -26,9 +26,11 @@ section.servicos ul#services-list {
     width: 100%;
     border-radius: 8px;
     padding: 25px 15px;
-    background: #f9f9f9;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+    background: transparent;
+    border: 1px solid #ecf0ff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     section.servicos ul#services-list li.service img {
       height: 70px;
       width: auto;
@@ -37,6 +39,10 @@ section.servicos ul#services-list {
       margin-bottom: 15px; }
     section.servicos ul#services-list li.service p.title {
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 900;
       text-align: center;
-      color: #536ecd; }
+      color: #ecf0ff; }
+  section.servicos ul#services-list li.service:hover {
+    background: #ecf0ff; }
+    section.servicos ul#services-list li.service:hover p.title {
+      color: #080120; }

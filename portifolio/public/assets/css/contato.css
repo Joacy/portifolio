@@ -4,7 +4,7 @@ section.contato ul {
     margin-top: 15px; }
   section.contato ul li {
     font-size: 14px;
-    color: #536ecd; }
+    color: #ecf0ff; }
     section.contato ul li a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -15,7 +15,7 @@ section.contato ul {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #536ecd;
+      color: #ecf0ff;
       font-weight: bold;
       text-decoration: none;
       -webkit-transition: all 0.3s;
@@ -23,15 +23,15 @@ section.contato ul {
       transition: all 0.3s;
       padding: 10px 15px;
       border-radius: 8px;
-      border: 2px solid #536ecd;
+      border: 2px solid #ecf0ff;
       max-width: 120px; }
       section.contato ul li a i {
         margin-right: 10px;
         font-weight: normal;
         font-size: 16px; }
     section.contato ul li a:hover {
-      background: #536ecd;
-      color: #f9f9f9; }
+      color: #080120;
+      background: #ecf0ff; }
 
 section.contato form {
   display: -webkit-box;
@@ -49,39 +49,39 @@ section.contato form {
   section.contato form input,
   section.contato form textarea {
     background: transparent;
-    border: 1px solid #536ecd;
+    border: 1px solid #ecf0ff;
     padding: 10px;
     border-radius: 4px;
-    color: #536ecd;
+    color: #ecf0ff;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
   section.contato form input::-webkit-input-placeholder,
   section.contato form textarea::-webkit-input-placeholder {
-    color: #536ecd;
+    color: #ecf0ff;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
   section.contato form input:-ms-input-placeholder,
   section.contato form textarea:-ms-input-placeholder {
-    color: #536ecd;
+    color: #ecf0ff;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
   section.contato form input::-ms-input-placeholder,
   section.contato form textarea::-ms-input-placeholder {
-    color: #536ecd;
+    color: #ecf0ff;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
   section.contato form input::placeholder,
   section.contato form textarea::placeholder {
-    color: #536ecd;
+    color: #ecf0ff;
     font-family: "Oxygen", sans-serif;
     font-size: 14px; }
   section.contato form button {
     width: 120px;
     padding: 10px 15px;
-    background: #536ecd;
+    border-radius: 8px;
+    border: 2px solid #ecf0ff;
+    background: transparent;
     color: #ecf0ff;
-    border: 0;
-    border-radius: 4px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -89,4 +89,5 @@ section.contato form {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   section.contato form button:hover {
-    background: #536ecdee; }
+    background: #ecf0ff;
+    color: #080120; }

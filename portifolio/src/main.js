@@ -92,7 +92,7 @@ class App {
 
             let linkEl = document.createElement('a');
             linkEl.setAttribute('target', '_blank');
-            linkEl.appendChild(document.createTextNode('Acessar'));
+            linkEl.appendChild(document.createTextNode('Acessar projeto'));
             linkEl.setAttribute('href', repo.web_url);
 
             let listItemEl = document.createElement('li');

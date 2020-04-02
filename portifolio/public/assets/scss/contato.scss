@@ -8,19 +8,19 @@ section.contato {
 
     li {
       font-size: 14px;
-      color: #536ecd;
+      color: #ecf0ff;
 
       a {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #536ecd;
+        color: #ecf0ff;
         font-weight: bold;
         text-decoration: none;
         transition: all 0.3s;
         padding: 10px 15px;
         border-radius: 8px;
-        border: 2px solid #536ecd;
+        border: 2px solid #ecf0ff;
         max-width: 120px;
 
         i {
@@ -31,8 +31,8 @@ section.contato {
       }
 
       a:hover {
-        background: #536ecd;
-        color: #f9f9f9;
+        color: #080120;
+        background: #ecf0ff;
       }
     }
   }
@@ -51,17 +51,17 @@ section.contato {
     input,
     textarea {
       background: transparent;
-      border: 1px solid #536ecd;
+      border: 1px solid #ecf0ff;
       padding: 10px;
       border-radius: 4px;
-      color: #536ecd;
+      color: #ecf0ff;
       font-family: "Oxygen", sans-serif;
       font-size: 14px;
     }
 
     input::placeholder,
     textarea::placeholder {
-      color: #536ecd;
+      color: #ecf0ff;
       font-family: "Oxygen", sans-serif;
       font-size: 14px;
     }
@@ -69,17 +69,18 @@ section.contato {
     button {
       width: 120px;
       padding: 10px 15px;
-      background: #536ecd;
+      border-radius: 8px;
+      border: 2px solid #ecf0ff;
+      background: transparent;
       color: #ecf0ff;
-      border: 0;
-      border-radius: 4px;
       font-size: 14px;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s;
     }
     button:hover {
-      background: #536ecdee;
+      background: #ecf0ff;
+      color: #080120;
     }
   }
 }

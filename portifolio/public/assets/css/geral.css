@@ -8,8 +8,8 @@
 body {
   width: 100%;
   height: 100%;
-  background: #f9f9f9;
-  color: #536ecd;
+  background: #080120;
+  color: #ecf0ff;
   font-family: "Oxygen", sans-serif; }
 
 h1,
@@ -28,7 +28,7 @@ h2 {
   margin-bottom: 35px; }
 
 section {
-  background: #000000;
+  background: #080120;
   padding: 50px 0px; }
 
 .container {
