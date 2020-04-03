@@ -17,7 +17,7 @@ section.servicos {
             text-align: center;
             width: 100%;
             border-radius: 8px;
-            padding: 25px 15px;
+            padding: 15px;
             background: transparent;
             border: 1px solid #ecf0ff;
             transition: all 0.3s;
@@ -29,20 +29,30 @@ section.servicos {
                 margin-bottom: 15px;
             }
 
+            p {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
             p.title {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 900;
                 text-align: center;
                 color: #ecf0ff;
+                margin-bottom: 10px;
             }
         }
 
         li.service:hover {
-            background: #ecf0ff;
+            border-style: dashed;
+        }
+    }
+}
 
-            p.title {
-                color: #080120;
-            }
+@media screen and(max-width: 767px) {
+    section.servicos {
+        ul#services-list {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

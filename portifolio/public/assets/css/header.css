@@ -2,6 +2,7 @@ header {
   background: #080120;
   color: #ecf0ff;
   padding: 25px 0px;
+  margin: 0;
   width: 100%; }
   header .menu {
     display: -webkit-box;
@@ -18,7 +19,8 @@ header {
     margin: 0 auto; }
     header .menu .logo {
       height: 70px;
-      width: 200px; }
+      width: 200px;
+      margin: 0; }
     header .menu ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -29,7 +31,8 @@ header {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       width: 60%;
-      list-style: none; }
+      list-style: none;
+      margin: 0; }
       header .menu ul li + li {
         margin-left: 25px; }
       header .menu ul li a {

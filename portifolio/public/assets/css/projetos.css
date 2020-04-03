@@ -27,7 +27,7 @@ section.projetos ul#repo-list {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    padding: 25px 15px;
+    padding: 15px;
     background: transparent;
     border: 1px solid #ecf0ff;
     -webkit-transition: all 0.3s;
@@ -35,24 +35,31 @@ section.projetos ul#repo-list {
     transition: all 0.3s; }
     section.projetos ul#repo-list li.repo img {
       width: 80px;
+      height: 80px;
+      border-radius: 8px;
       float: left;
       margin-bottom: 10px; }
     section.projetos ul#repo-list li.repo strong {
-      font-size: 20px;
+      font-size: 18px;
       text-transform: capitalize; }
     section.projetos ul#repo-list li.repo p {
-      margin: 5px 0; }
+      margin: 5px 0;
+      font-size: 15px; }
     section.projetos ul#repo-list li.repo a {
-      background: #ecf0ff;
       text-decoration: none;
-      color: #080120;
+      color: #ecf0ff;
       font-size: 14px;
-      padding: 5px 10px;
-      border-radius: 4px;
-      border: 1px solid #080120; }
+      font-weight: bold;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    section.projetos ul#repo-list li.repo a:hover {
+      border-bottom: 2px solid #ecf0ff; }
     section.projetos ul#repo-list li.repo p.techs {
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       margin-bottom: 5px; }
     section.projetos ul#repo-list li.repo ul.list-tags {
@@ -63,6 +70,7 @@ section.projetos ul#repo-list {
       -ms-flex-pack: center;
       justify-content: center;
       list-style: none;
+      margin: 0;
       margin-top: 5px;
       margin-bottom: 15px;
       width: 100%; }
@@ -74,13 +82,7 @@ section.projetos ul#repo-list {
         background: transparent;
         border: 1px solid #ecf0ff; }
   section.projetos ul#repo-list li.repo:hover {
-    background: #ecf0ff;
-    color: #080120; }
-    section.projetos ul#repo-list li.repo:hover a:hover {
-      background: #080120dd;
-      color: #ecf0ff; }
-    section.projetos ul#repo-list li.repo:hover ul.list-tags li.tag {
-      border: 1px solid #080120; }
+    border-style: dashed; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   section.projetos ul#repo-list {
