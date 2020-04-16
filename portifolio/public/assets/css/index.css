@@ -34,7 +34,7 @@ section.principal::before {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(5, 25, 35, 0.8);
   height: 100%;
   width: 100%;
   z-index: 5; }
@@ -69,7 +69,7 @@ h2 {
   margin-bottom: 35px; }
 
 section {
-  background: #080120;
+  background: #003554;
   padding: 50px 0px; }
 
 .container {
@@ -113,7 +113,7 @@ section {
       margin-top: 50px; } }
 
 header {
-  background: #080120;
+  background: #051923;
   color: #ecf0ff;
   padding: 25px 0px;
   margin: 0;
@@ -422,7 +422,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #010005;
+  background: #051923;
   padding: 25px 0px; }
   footer p {
     text-align: center;
