@@ -6,6 +6,10 @@ class App {
         this.userId = '';
         this.repositories = [];
 
+        this.totalPages = 1000;
+        this.currentPage = 0;
+        this.nextPage = 0;
+
         this.listEl = document.getElementById('repo-list');
 
         this.getUser();
@@ -31,34 +35,58 @@ class App {
     }
 
     async getRepositories () {
-        try {
-            const params = {
-                page: 1,
-            };
 
-            const response = await api.get(`users/${this.userId}/projects`, { params });
+        for (let index = 1; index <= this.totalPages; index++) {
 
-            this.repositories = response.data.filter(repo => {
-                return repo.tag_list.find(tag => {
-                    return (
-                        tag === 'Javascript' ||
-                        tag === 'ES6+' ||
-                        tag === 'Html' ||
-                        tag === 'Css' ||
-                        tag === 'Php' ||
-                        tag === 'Nodejs' ||
-                        tag === 'React' ||
-                        tag === 'React Native' ||
-                        tag === 'Angularjs' ||
-                        tag === 'Vuejs'
-                    );
+            let params = {
+                page: index,
+            }
+
+            try {
+                const response = await api.get(`users/${this.userId}/projects`, { params });
+
+                // const total = response.headers['x-total'];
+
+                this.totalPages = parseInt(response.headers['x-total-pages']);
+
+                //const perPage = response.headers['x-per-page'];
+
+                // this.currentPage = parseInt(response.headers['x-page']);
+
+                //const prevPage = response.headers['x-prev-page'];
+
+                // this.nextPage = parseInt(response.headers['x-next-page']);
+
+                // console.log(total);
+                console.log(this.totalPages);
+                // console.log(perPage);
+                // console.log(this.currentPage);
+                // console.log(prevPage);
+                // console.log(this.nextPage);
+
+                var repos = response.data.filter(repo => {
+                    return repo.tag_list.find(tag => {
+                        return (
+                            tag === 'Javascript' ||
+                            tag === 'ES6+' ||
+                            tag === 'Html' ||
+                            tag === 'Css' ||
+                            tag === 'Php' ||
+                            tag === 'Nodejs' ||
+                            tag === 'React' ||
+                            tag === 'React Native' ||
+                            tag === 'Angularjs' ||
+                            tag === 'Vuejs'
+                        );
+                    });
                 });
-            });
 
-            console.log(this.repositories);
-        } catch (error) {
-            alert('O repositório não existe');
-        }
+                this.repositories = [...this.repositories, ...repos];
+                console.log(this.repositories);
+            } catch (error) {
+                alert('O repositório não existe');
+            }
+        };
 
         this.render();
     }
