@@ -11,19 +11,41 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <div class="menu">
-                <div class="logo">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="javascript:;">
                     <img src="https://via.placeholder.com/200x70/ecf0ff/ecf0ff" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">
+                                Projetos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -132,6 +154,67 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var width = $(window).width();
+
+            if (width >= 992) {
+                if (scroll >= 120) {
+                    $('#header').addClass('bg-fixed');
+                } else {
+                    $('#header').removeClass('bg-fixed');
+                }
+            }
+            else {
+                if (scroll >= 80) {
+                    $('#header').addClass('bg-fixed');
+                } else {
+                    $('#header').removeClass('bg-fixed');
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        var $doc = $('html, body');
+        var width = $(window).width();
+
+        if (width >= 992) {
+            $('a.nav-link').click(function () {
+                var time = ($(this).offset().top - 120);
+                $doc.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - 120
+                }, time);
+                return false;
+            });
+            $('a.navbar-brand').click(function () {
+                var time = ($(this).offset().top - 120);
+                $doc.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - 120
+                }, time);
+                return false;
+            });
+        }
+        else {
+            $('a.nav-link').click(function () {
+                var time = ($(this).offset().top - 231);
+                $doc.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - 231
+                }, time);
+                return false;
+            });
+            $('a.navbar-brand').click(function () {
+                var time = ($(this).offset().top - 250);
+                $doc.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - 231
+                }, time);
+                return false;
+            });
+        }
+    </script>
+
     <script src="./bundle.js"></script>
 </body>
 

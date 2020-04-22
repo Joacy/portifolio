@@ -1,50 +1,110 @@
-header {
+header#header {
   background: #051923;
   color: #ecf0ff;
-  padding: 25px 0px;
-  margin: 0;
   width: 100%;
 
-  .menu {
+  nav.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 25px 0px;
 
-    .logo {
-      height: 70px;
-      width: 200px;
-      margin: 0;
-    }
-
-    ul {
+    a.navbar-brand {
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      width: 60%;
-      list-style: none;
-      margin: 0;
+      justify-content: center;
+      border-radius: 4px;
+      padding: 0 10px;
 
-      li + li {
-        margin-left: 25px;
+      img {
+        height: 70px;
+        width: 200px;
+        margin: 0;
+      }
+    }
+
+    .navbar-toggler {
+      i {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+
+    #navbarNav {
+      ul.navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+
+        li.nav-item {
+          margin-left: 70px;
+        }
+
+        li.nav-item {
+          a.nav-link {
+            display: flex;
+            padding: 5px 0px;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ecf0ff;
+            transition: all 0.3s;
+          }
+          a.nav-link:hover {
+            border-bottom: 2px solid #ecf0ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+header#header.bg-fixed {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 1px 1px 15px 0px #051923;
+  animation: slide-down 0.5s forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and(max-width: 991px) {
+  header#header {
+    nav.navbar {
+      padding: 15px 0;
+      a.navbar-brand {
+        margin: 0;
+        padding-right: 0;
+
+        img {
+          height: 50px;
+          width: 180px;
+        }
       }
 
-      li {
-        a {
-          display: flex;
-          padding: 5px 0px;
-          border-top: 2px solid transparent;
-          border-bottom: 2px solid transparent;
-          text-decoration: none;
-          font-size: 16px;
-          font-weight: bold;
-          color: #ecf0ff;
-          transition: all 0.3s;
-        }
-        a:hover {
-          border-bottom: 2px solid #ecf0ff;
+      #navbarNav {
+        padding-top: 15px;
+        ul.navbar-nav {
+          li.nav-item {
+            margin-left: 15px;
+            a.nav-link {
+              border: 0;
+            }
+            a.nav-link:hover {
+              border: 0;
+            }
+          }
         }
       }
     }
