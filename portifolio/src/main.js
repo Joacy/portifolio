@@ -73,7 +73,7 @@ class App {
                             tag === 'Css' ||
                             tag === 'Php' ||
                             tag === 'Nodejs' ||
-                            tag === 'React' ||
+                            tag === 'Reactjs' ||
                             tag === 'React Native' ||
                             tag === 'Angularjs' ||
                             tag === 'Vuejs'
@@ -96,7 +96,7 @@ class App {
 
         this.repositories.forEach(repo => {
             let imgEl = document.createElement('img');
-            imgEl.setAttribute('src', 'https://secure.gravatar.com/avatar/d8d0406d67a67093f4429fecac92ec16?s=80&d=identicon');
+            imgEl.setAttribute('src', repo.avatar_url);
 
             let titleEl = document.createElement('strong');
             titleEl.appendChild(document.createTextNode(repo.name));

@@ -307,8 +307,8 @@ section.projetos ul#repo-list {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
     section.projetos ul#repo-list li.repo img {
-      width: 80px;
-      height: 80px;
+      height: 70px;
+      width: auto;
       border-radius: 8px;
       float: left;
       margin-bottom: 10px; }
