@@ -39,3 +39,21 @@ section.principal::before {
     width: 100%;
     z-index: 5;
 }
+
+@media screen and(max-width: 991px) {
+    section.principal {
+        height: calc(100vh - 80px);
+    }
+}
+
+@media screen and(max-width: 576px) {
+    section.principal {
+        h1 {
+            font-size: 50 * 0.8px;
+        }
+
+        h2 {
+            font-size: 28 * 0.8px;
+        }
+    }
+}

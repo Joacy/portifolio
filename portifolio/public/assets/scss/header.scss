@@ -17,12 +17,13 @@ header#header {
 
       img {
         height: 70px;
-        width: 200px;
+        width: auto;
         margin: 0;
       }
     }
 
     .navbar-toggler {
+      outline: 0;
       i {
         color: #fff;
         font-size: 24px;
@@ -89,7 +90,7 @@ header#header.bg-fixed {
 
         img {
           height: 50px;
-          width: 180px;
+          width: auto;
         }
       }
 

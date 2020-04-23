@@ -24,11 +24,13 @@ header#header {
       padding: 0 10px; }
       header#header nav.navbar a.navbar-brand img {
         height: 70px;
-        width: 200px;
+        width: auto;
         margin: 0; }
-    header#header nav.navbar .navbar-toggler i {
-      color: #fff;
-      font-size: 24px; }
+    header#header nav.navbar .navbar-toggler {
+      outline: 0; }
+      header#header nav.navbar .navbar-toggler i {
+        color: #fff;
+        font-size: 24px; }
     header#header nav.navbar #navbarNav ul.navbar-nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -91,7 +93,7 @@ header#header.bg-fixed {
       padding-right: 0; }
       header#header nav.navbar a.navbar-brand img {
         height: 50px;
-        width: 180px; }
+        width: auto; }
     header#header nav.navbar #navbarNav {
       padding-top: 15px; }
       header#header nav.navbar #navbarNav ul.navbar-nav li.nav-item {
