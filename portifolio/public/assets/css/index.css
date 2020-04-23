@@ -306,12 +306,15 @@ section.projetos ul#repo-list {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    section.projetos ul#repo-list li.repo img {
-      height: 70px;
-      width: auto;
-      border-radius: 8px;
-      float: left;
-      margin-bottom: 10px; }
+    section.projetos ul#repo-list li.repo .boxImg {
+      background: #fff;
+      margin-bottom: 10px;
+      border-radius: 8px; }
+      section.projetos ul#repo-list li.repo .boxImg img {
+        height: 70px;
+        width: auto;
+        float: left;
+        margin: 5px; }
     section.projetos ul#repo-list li.repo strong {
       font-size: 18px;
       text-transform: capitalize; }

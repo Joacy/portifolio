@@ -95,8 +95,13 @@ class App {
         this.listEl.innerHTML = '';
 
         this.repositories.forEach(repo => {
+            let boxImgEl =document.createElement('div');
+            boxImgEl.className = 'boxImg';
+
             let imgEl = document.createElement('img');
             imgEl.setAttribute('src', repo.avatar_url);
+
+            boxImgEl.appendChild(imgEl);
 
             let titleEl = document.createElement('strong');
             titleEl.appendChild(document.createTextNode(repo.name));
@@ -124,7 +129,7 @@ class App {
             linkEl.setAttribute('href', repo.web_url);
 
             let listItemEl = document.createElement('li');
-            listItemEl.appendChild(imgEl);
+            listItemEl.appendChild(boxImgEl);
             listItemEl.appendChild(titleEl);
             listItemEl.appendChild(descriptionEl);
             listItemEl.appendChild(techsEl);

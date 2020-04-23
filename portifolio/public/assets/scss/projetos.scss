@@ -24,12 +24,17 @@ section.projetos {
             border: 1px solid #ecf0ff;
             transition: all 0.3s;
 
-            img {
-                height: 70px;
-                width: auto;
-                border-radius: 8px;
-                float: left;
+            .boxImg {
+                background: #fff;
                 margin-bottom: 10px;
+                border-radius: 8px;
+                
+                img {
+                    height: 70px;
+                    width: auto;
+                    float: left;
+                    margin: 5px;
+                }
             }
 
             strong {
