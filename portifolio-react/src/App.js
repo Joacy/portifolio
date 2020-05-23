@@ -1,8 +1,10 @@
 import React from 'react';
 
-function App() {
+import Routes from './routes';
+
+const App = () => {
   return (
-    <h1>Joacy Mesquita</h1>
+    <Routes />
   );
 }
 
