@@ -30,7 +30,7 @@ export default function Contato () {
             <div className="box">
                 <Container>
                     <Row>
-                        <Col sm={12} lg={6}>
+                        <Col sm={12} lg={5}>
                             <h2>Onde me encontrar</h2>
                             <ul className="social-list">
                                 <li>
@@ -58,7 +58,7 @@ export default function Contato () {
                             </ul>
                         </Col>
 
-                        <Col sm={12} lg={6}>
+                        <Col sm={12} lg={7}>
                             <h2>Faça um orçamento</h2>
                             <form onSubmit={handleContact}>
                                 <input

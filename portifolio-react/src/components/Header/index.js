@@ -25,12 +25,6 @@ export default function Header () {
                 <Navbar.Collapse id="navegacao">
                     <ul>
                         <li>
-                            <Link to='/sobre'>
-                                Sobre
-                        </Link>
-                        </li>
-
-                        <li>
                             <Link to='/servicos'>
                                 Serviços
                         </Link>

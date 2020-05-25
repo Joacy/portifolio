@@ -1,0 +1,28 @@
+ul.projetos {
+    list-style: none;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+ul.projetos li {
+    padding: 15px;
+    background: #ecf0ff;
+    color: #051923;
+    border-radius: 4px;
+    box-shadow: 4px 4px 12px 0px #051923;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul.projetos li:first-child {
+    margin-top: 0;
+}
