@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from "react-bootstrap";
 
 import Header from '../../components/Header';
@@ -16,7 +16,7 @@ export default function Projetos () {
             const response = await api.get('users/Joacy/repos');
 
             setProjects(response.data);
-            // setProjects({ name, html_url, description, language });
+
             console.log(response.data);
         } catch (error) {
             alert(error);
