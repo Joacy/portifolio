@@ -6,13 +6,13 @@ import {
 } from "react-bootstrap";
 
 import { FiMenu } from 'react-icons/fi';
-import logo from '../../assets/img/logo.jpg';
+import logo from '../../assets/img/icone.png';
 
 import './styles.css';
 
 export default function Header () {
     return (
-        <Navbar expand="lg">
+        <Navbar fixed="top" expand="lg">
             <Container>
                 <Navbar.Brand>
                     <Link to='/'>

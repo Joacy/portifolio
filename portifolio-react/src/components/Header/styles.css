@@ -13,16 +13,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    width: 75px;
     margin-right: 50px;
     padding: 0;
 }
 
 .navbar .navbar-brand img {
     width: 100%;
-    height: auto;
+    height: 70px;
+    object-fit: contain;
     margin: 0;
-    border-radius: 50%;
+    border-radius: 4px;
 }
 
 .navbar #navegacao ul {
