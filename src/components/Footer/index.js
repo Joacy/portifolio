@@ -1,14 +1,16 @@
 import React from 'react';
 import { Container } from "react-bootstrap";
 
-import './styles.css';
+import { StyledFooter } from './styles';
 
-export default function Footer () {
-    return (
-        <footer>
-            <Container>
-                <p>Todos os direitos reservados - Joacy Mesquita</p>
-            </Container>
-        </footer>
-    );
+function Footer () {
+  return (
+    <StyledFooter>
+      <Container>
+        <p>Todos os direitos reservados - Joacy Mesquita</p>
+      </Container>
+    </StyledFooter>
+  );
 }
+
+export default Footer;

@@ -8,11 +8,11 @@ import {
 import { FiMenu } from 'react-icons/fi';
 import logo from '../../assets/img/icone.png';
 
-import './styles.css';
+import { StyledNavbar } from './styles';
 
-export default function Header () {
+function Header () {
     return (
-        <Navbar fixed="top" expand="lg">
+        <StyledNavbar fixed="top" expand="lg">
             <Container>
                 <Navbar.Brand>
                     <Link to='/'>
@@ -44,6 +44,9 @@ export default function Header () {
                     </ul>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+        </StyledNavbar>
     );
 }
+
+
+export default Header;

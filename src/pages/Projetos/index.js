@@ -6,57 +6,66 @@ import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
-import './styles.css';
+import { ProjectsList } from './styles';
 
-export default function Projetos () {
-    const [projects, setProjects] = useState([]);
+function Projetos () {
+  const [projects, setProjects] = useState([]);
+  const [languages, setLanguages] = useState([]);
 
-    async function getProjects () {
-        try {
-            const response = await api.get('users/Joacy/repos');
+  async function getProjects () {
+    try {
+      const response = await api.get('users/Joacy/repos');
 
-            setProjects(response.data);
+      setProjects(response.data);
 
-            console.log(response.data);
-        } catch (error) {
-            alert(error);
-        }
+      console.log(response.data);
+    } catch (error) {
+      alert(error);
     }
+  }
 
-    useEffect(() => {
-        getProjects();
-    }, []);
+  useEffect(() => {
+    getProjects();
+  }, []);
 
-    return (
-        <>
-            <Header />
-            <div className="box">
-                <Container>
-                    <h2>Projetos</h2>
+  return (
+    <>
+      <Header />
+      <div className="box">
+        <Container>
+          <h2>Projetos</h2>
 
-                    <ul className="projetos">
-                        {projects.map(project => (
-                            <li key={project.id}>
-                                <div className="info">
-                                    <h4>{project.name}</h4>
-                                    <h5>{project.description}</h5>
-                                    <h6>{project.language}</h6>
-                                </div>
+          <ProjectsList>
+            {projects.map(project => (project.language !== null) && (
+              <li key={project.id}>
+                <div className="info">
+                  <h4>{project.name}</h4>
+                  <h5>{project.description}</h5>
 
-                                <div className="link">
-                                    <a
-                                        href={project.html_url}
-                                        target="_blank"
-                                    >
-                                        <span>Acessar</span>
-                                    </a>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                </Container>
-            </div>
-            <Footer />
-        </>
-    );
+                  <ul className="linguagens">
+                    {/* {languages.get(project.id).map(language => (
+                      <li className="linguagem" key={language}>{language}</li>
+                    ))} */}
+
+                    <li className="linguagem">{project.language}</li>
+                  </ul>
+                </div>
+                <div className="link">
+                  <a
+                    href={project.html_url}
+                    target="_blank"
+                  >
+                    <span>Acessar</span>
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ProjectsList>
+        </Container>
+      </div>
+      <Footer />
+    </>
+  );
 }
+
+export default Projetos;

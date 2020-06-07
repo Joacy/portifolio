@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import {
-    Container,
-} from "react-bootstrap";
-
-import {
     FaWhatsapp,
     FaLinkedinIn,
     FaGithub,
@@ -15,9 +11,9 @@ import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
-import './styles.css';
+import { ContainerUser } from './styles';
 
-export default function Home () {
+function Home () {
     const [avatarUrl, setAvatarUrl] = useState('');
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
@@ -48,7 +44,7 @@ export default function Home () {
         <>
             <Header />
             <div className="box">
-                <Container className="user">
+                <ContainerUser>
                     <div className="foto">
                         <img src={avatarUrl} alt="Joacy Mesquita da Silva" />
                     </div>
@@ -79,9 +75,11 @@ export default function Home () {
                             <FaLinkedinIn size={16} /> <span>Linkedin</span>
                         </a>
                     </div>
-                </Container>
+                </ContainerUser>
             </div>
             <Footer />
         </>
     );
 }
+
+export default Home;
