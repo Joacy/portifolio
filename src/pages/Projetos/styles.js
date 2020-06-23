@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const ProjectsList = styled.ul`
+export const ProjectsList = styled.div`
     list-style: none;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
     
-    li {
-        padding: 15px;
+    .card {
+        background: transparent;
         color: #ecf0ff;
         border-radius: 4px;
         border: 1px solid #ecf0ff;
@@ -22,62 +22,77 @@ export const ProjectsList = styled.ul`
         width: 100%;
     }
 
-    li:hover {
+    .card:hover {
         background: #05192377;
         transition: 0.3s;
     }
 
-    li:first-child {
+    .card:first-child {
         margin-top: 0;
     }
     
-    li .info {
-        margin-bottom: 15px;
+    .card .card-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        width: 100%;
+        border-bottom: 1px solid #ecf0ff;
+        background: transparent;
     }
-    
-    li .info h4 {
+
+    .card .card-header h4 {
         text-transform: uppercase;
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-    
-    li .info h5 {
         font-size: 15px;
         font-weight: bold;
+    }
+    
+    .card .card-body {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .card .card-body h5 {
+        font-size: 14px;
+        font-weight: bold;
         margin-bottom: 15px;
     }
     
-    li .info ul.linguagens {
+    .card .card-body ul.linguagens {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     
-    li .info ul.linguagens li.linguagem + li.linguagem {
+    .card .card-body ul.linguagens li.linguagem + li.linguagem {
         margin: 0;
         margin-left: 10px;
     }
     
-    li .info ul.linguagens li.linguagem {
+    .card .card-body ul.linguagens li.linguagem {
         padding: 3px 10px;
         background: #ecf0ff;
         border: 0;
         box-shadow: none;
         border-radius: 4px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
         color: #051923;
         width: auto;
     }
     
-    li .link {
+    .card .card-body .link {
         width: 100%;
     }
     
-    li .link a {
+    .card .card-body .link a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -85,20 +100,16 @@ export const ProjectsList = styled.ul`
         padding: 3px 10px;
         border: 1px solid #ecf0ff;
         border-radius: 4px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: bold;
         color: #ecf0ff;
         text-transform: none;
     }
     
-    li .link a:hover {
+    .card .card-body .link a:hover {
         background: #ecf0ff;
         color: #051923;
         transition: 0.3s;
-    }
-
-    @media screen and (max-width: 991px) {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     @media screen and (max-width: 767px) {
