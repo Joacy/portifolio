@@ -11,24 +11,24 @@ export const StyledNavbar = styled(Navbar)`
     flex: 1;
     background: #051923;
     color: #ecf0ff;
-    padding: 10px 15px;
+    padding: 0.7rem 0.9rem;
     width: 100%;
 
     .navbar-brand {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 75px;
-        margin-right: 50px;
+        height: 4rem;
+        margin-right: 3rem;
         padding: 0;
     }
     
     .navbar-brand img {
         width: 100%;
-        height: 70px;
+        height: 4rem;
         object-fit: contain;
         margin: 0;
-        border-radius: 4px;
+        border-radius: 0.4rem;
     }
 
     #navegacao ul {
@@ -49,10 +49,10 @@ export const StyledNavbar = styled(Navbar)`
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
         color: #ecf0ff;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: bold;
         text-decoration: none;
-        padding: 5px;
+        padding: 0.5rem;
     }
 
     #navegacao ul li:hover a {
@@ -66,11 +66,11 @@ export const StyledNavbar = styled(Navbar)`
             flex-direction: column;
             width: 100%;
             list-style: none;
-            margin-top: 5px;
+            margin-top: 0.3rem;
         }
 
         #navegacao ul li + li {
-            margin-top: 5px;
+            margin-top: 0.3rem;
         }
 
         #navegacao ul li {

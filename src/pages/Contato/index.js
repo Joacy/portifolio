@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 
 import {
   FaWhatsapp,
@@ -10,7 +14,10 @@ import {
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-import { SocialList, Form } from './styles';
+import {
+  SocialList,
+  Form,
+} from './styles';
 
 export default function Contato () {
 

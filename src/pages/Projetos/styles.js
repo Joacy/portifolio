@@ -5,12 +5,12 @@ export const ProjectsList = styled.div`
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
+    grid-gap: 2rem;
     
     .card {
         background: transparent;
         color: #ecf0ff;
-        border-radius: 4px;
+        border-radius: 0.3rem;
         border: 1px solid #ecf0ff;
         box-shadow: 4px 4px 12px 0px #051923;
 
@@ -36,7 +36,7 @@ export const ProjectsList = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 1rem;
         width: 100%;
         border-bottom: 1px solid #ecf0ff;
         background: transparent;
@@ -44,12 +44,12 @@ export const ProjectsList = styled.div`
 
     .card .card-header h4 {
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: bold;
     }
     
     .card .card-body {
-        padding: 15px;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,31 +58,33 @@ export const ProjectsList = styled.div`
     }
 
     .card .card-body h5 {
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
+        width: 100%;
     }
     
     .card .card-body ul.linguagens {
         display: flex;
         justify-content: center;
         align-items: center;
+        list-style: none;
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
     
     .card .card-body ul.linguagens li.linguagem + li.linguagem {
         margin: 0;
-        margin-left: 10px;
+        margin-left: 0.7rem;
     }
     
     .card .card-body ul.linguagens li.linguagem {
-        padding: 3px 10px;
+        padding: 0.15rem 0.7rem;
         background: #ecf0ff;
         border: 0;
         box-shadow: none;
-        border-radius: 4px;
-        font-size: 10px;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
         font-weight: bold;
         color: #051923;
         width: auto;
@@ -97,10 +99,10 @@ export const ProjectsList = styled.div`
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        padding: 3px 10px;
+        padding: 0.15rem 0.7rem;
         border: 1px solid #ecf0ff;
-        border-radius: 4px;
-        font-size: 12px;
+        border-radius: 0.3rem;
+        font-size: 0.9rem;
         font-weight: bold;
         color: #ecf0ff;
         text-transform: none;

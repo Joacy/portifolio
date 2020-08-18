@@ -4,11 +4,11 @@ export const SocialList = styled.ul`
     list-style: none;
     
     li + li {
-        margin-top: 15px;
+        margin-top: 1rem;
     }
     
     li {
-        font-size: 14px;
+        font-size: 1rem;
         color: #ecf0ff;
     }
     
@@ -20,15 +20,15 @@ export const SocialList = styled.ul`
         font-weight: bold;
         text-decoration: none;
         transition: all 0.3s;
-        padding: 10px 15px;
-        border-radius: 8px;
-        border: 2px solid #ecf0ff;
-        width: 135px;
-        height: 40px;
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        border: 1px solid #ecf0ff;
+        width: 10rem;
+        height: 3rem;
     }
     
     li a span {
-        margin-left: 10px;
+        margin-left: 0.7rem;
     }
     
     li a:hover {
@@ -45,43 +45,43 @@ export const Form = styled.form`
     input + input,
     input + textarea,
     textarea + button {
-        margin-top: 15px;
+        margin-top: 1rem;
     }
     
     input {
-        height: 40px;
+        height: 3rem;
     }
     
     input,
     textarea {
         background: transparent;
         border: 1px solid #ecf0ff;
-        padding: 10px;
-        border-radius: 4px;
+        padding: 0.7rem;
+        border-radius: 0.4rem;
         color: #ecf0ff;
         font-family: "Oxygen", sans-serif;
-        font-size: 14px;
+        font-size: 1rem;
     }
     
     input::placeholder,
     textarea::placeholder {
         color: #ecf0ff;
         font-family: "Oxygen", sans-serif;
-        font-size: 14px;
+        font-size: 1rem;
     }
     
     button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 135px;
-        height: 40px;
-        padding: 0 15px;
-        border-radius: 8px;
-        border: 2px solid #ecf0ff;
+        width: 10rem;
+        height: 3rem;
+        padding: 0 1rem;
+        border-radius: 0.4rem;
+        border: 1px solid #ecf0ff;
         background: transparent;
         color: #ecf0ff;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s;

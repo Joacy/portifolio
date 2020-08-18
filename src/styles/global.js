@@ -30,13 +30,13 @@ export default createGlobalStyle`
 
     h2 {
         font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 35px;
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
     }
 
     .box {
-        margin-top: 90px;
-        margin-bottom: 50px;
-        padding: 50px 0;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        padding: 3rem 0;
     }
 `;

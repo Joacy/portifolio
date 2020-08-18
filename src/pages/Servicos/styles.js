@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ServicesList = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -17,30 +17,30 @@ export const ServicesList = styled.ul`
         align-items: center;
         text-align: center;
         width: 100%;
-        border-radius: 8px;
-        padding: 15px;
+        border-radius: 0.5rem;
+        padding: 1rem;
         background: transparent;
         border: 1px solid #ecf0ff;
         transition: all 0.3s;
     }
     
     li.service img {
-        height: 70px;
+        height: 5rem;
         width: auto;
         object-fit: contain;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
     
     li.service p {
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: 400;
     }
     
     li.service p.title {
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 900;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 0.7rem;
     }
     
     li.service:hover {

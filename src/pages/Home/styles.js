@@ -12,30 +12,30 @@ export const ContainerUser = styled(Container)`
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 200px;
-        height: 200px;
+        width: 15rem;
+        height: 15rem;
         box-shadow: 4px 4px 12px 0px #051923;
-        border-radius: 50%;
-        margin-bottom: 15px;
+        border-radius: 7.5rem;
+        margin-bottom: 0.9rem;
     }
 
     img {
-        width: 200px;
+        width: 15rem;
         height: auto;
         object-fit: contain;
-        border-radius: 50%;
+        border-radius: 7.5rem;
     }
 
     h3 {
-        margin-bottom: 10px;
+        margin-bottom: 0.7rem;
     }
 
     h4 {
-        margin-bottom: 10px;
+        margin-bottom: 0.7rem;
     }
 
     h5 {
-        margin-bottom: 25px;
+        margin-bottom: 2rem;
     }
 
     .links {
@@ -45,15 +45,15 @@ export const ContainerUser = styled(Container)`
     }
 
     .links a + a {
-        margin-left: 10px;
+        margin-left: 0.7rem;
     }
 
     .links a {
         display: flex;
         align-items: center;
         border: 1px solid #ecf0ff;
-        padding: 3px 7px;
-        border-radius: 4px;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
         text-decoration: none;
         color: #ecf0ff;
     }
@@ -65,10 +65,10 @@ export const ContainerUser = styled(Container)`
     }
 
     .links a svg {
-        margin-right: 5px;
+        margin-right: 0.3rem;
     }
 
     .links a span {
-        font-size: 14px;
+        font-size: 1rem;
     }
 `;
